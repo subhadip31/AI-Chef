@@ -16,7 +16,7 @@ body{
     gap: 10px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
     background-color: white;
-    
+    max-width: 1400px;
 }
 
 .header img{
@@ -29,6 +29,7 @@ body{
 
 .main{
     padding: 30px 30px 10px;
+    max-width: 1400px;
 }
 
 .add-ingredient-form{
@@ -102,37 +103,13 @@ ul.ingredients-list > li {
     cursor: pointer;
 }
 
-
-/* * {
-    box-sizing: border-box;
+.suggested-recipe-container {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
 }
 
-body {
-    background-color: #1C1917;
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    margin-bottom: 8px;
 }
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pad-container {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(2, 100px);
-    gap: 10px;
-}
-
-button {
-    height: 100px;
-    width: 100px;
-    border: 3px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    opacity: 0.1;
-}
-
-button.on {
-    opacity: 1;
-} */

@@ -8,7 +8,7 @@ export default function Header() {
             <img src={chef} alt="icon" />
         </div>
         <h1>
-            Chef Claude
+            Bite Buddy
         </h1>
     </header>
   )
