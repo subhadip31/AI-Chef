@@ -12,7 +12,10 @@ exports.handler = async (event) => {
       model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
-        { role: "user", content: `I have ${ingredientsString}. Please give me a recipe!` },
+        {
+          role: "user",
+          content: `I have ${ingredientsString}. Please give me a recipe!`,
+        },
       ],
       max_tokens: 1024,
     });

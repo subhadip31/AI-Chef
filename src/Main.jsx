@@ -28,7 +28,10 @@ export default function Main() {
         <button>+ Add Ingredient</button>
       </form>
       {ingredients.length > 0 && (
-        <IngredientsList ingredientsArray={ingredients} clickHandler={getRecipe} />
+        <IngredientsList
+          ingredientsArray={ingredients}
+          clickHandler={getRecipe}
+        />
       )}
       {recipe && <ChefRecipe recipe={recipe} />}
     </main>

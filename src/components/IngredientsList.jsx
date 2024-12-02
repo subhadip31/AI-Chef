@@ -1,7 +1,6 @@
 import React from "react";
 
-export default function IngredientsList({ingredientsArray, clickHandler}) {
-
+export default function IngredientsList({ ingredientsArray, clickHandler }) {
   const ingredientsList = ingredientsArray.map((ingredient) => {
     return (
       <li key={ingredient}>
