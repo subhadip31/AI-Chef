@@ -114,6 +114,8 @@ ul.ingredients-list > li {
 
 .suggested-recipe-container p{
     color: #141413;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .suggested-recipe-container ul li, .suggested-recipe-container ol li {
