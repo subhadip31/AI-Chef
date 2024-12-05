@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function IngredientsList({ ingredientsArray, clickHandler, ref }) {
+export default function IngredientsList({ ingredientsArray, clickHandler }) {
   const ingredientsList = ingredientsArray.map((ingredient) => {
     return (
       <li key={ingredient}>
@@ -15,7 +15,7 @@ export default function IngredientsList({ ingredientsArray, clickHandler, ref })
       <ul className="ingredients-list">{ingredientsList}</ul>
       {ingredientsArray.length > 3 && (
         <div className="get-recipe-container">
-          <div ref={ref}>
+          <div>
             <h3>Ready for a recipe?</h3>
             <p>Generate a recipe from your list of ingredients.</p>
           </div>

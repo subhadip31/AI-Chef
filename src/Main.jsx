@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import IngredientsList from "./components/IngredientsList";
 import ChefRecipe from "./components/ChefRecipe";
 import { getRecipeFromMistral } from "./ai";
@@ -6,17 +6,6 @@ import { getRecipeFromMistral } from "./ai";
 export default function Main() {
   const [ingredients, setIngredients] = useState([]);
   const [recipe, setRecipe] = useState("");
-
-  const recipeSection = useRef(null)
-
-  useEffect(() => {
-
-    if(recipe !== "" && recipeSection.current !== null){
-      recipeSection.current.scrollIntoView({behavior : smooth})
-    }
-
-  }, [recipe])
-  
 
   function submit(event) {
     event.preventDefault();
@@ -42,7 +31,6 @@ export default function Main() {
         <IngredientsList
           ingredientsArray={ingredients}
           clickHandler={getRecipe}
-          ref={recipeSection}
         />
       )}
       {recipe && <ChefRecipe recipe={recipe} />}
